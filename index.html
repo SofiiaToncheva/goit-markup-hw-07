@@ -19,7 +19,7 @@
         <div class="container page-header-container">
             <nav class="page-nav">
             
-                <a class="link logo" href="index.html">Web <span class="logo-accent">Studio</span></a>
+                <a class="link logo" href="index.html">Web<span class="logo-accent">Studio</span></a>
             
                 <ul class="list menu ">
                     <li class="menu__item">
@@ -34,6 +34,11 @@
                 </ul>
             
             </nav>
+            <button type="button" class="mobile-menu-open" data-menu-open >
+                <svg class="mobile-menu-open__icon" width="40" height="40" >
+                    <use href="./images/sprite.svg#burger-icon" ></use>
+                </svg>
+            </button>
             
             <ul class="list menu-address">
                 <li class="menu-address__item">
@@ -52,6 +57,53 @@
                 </li>
             </ul>
         </div>
+
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu__container">
+                <button class="mobile-menu__close-btn" data-menu-close>
+                    <svg class="mobile-menu__close-icon" width="40" height="40">
+                        <use href="./images/sprite.svg#icon-cross"></use>
+                    </svg>
+                </button>
+                
+                <ul class="list mobile-menu__list">
+                    <li  class="mobile-menu__item">
+                        <a class="mobile-menu__link link" href="">Студія</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a class="mobile-menu__link link" href="">Портфоліо</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a class="mobile-menu__link link" href="">Контакти</a>
+                    </li>
+                </ul>
+                
+                <ul class="list mobile-menu__secondary-list">
+                    <li class="mobile-menu__secondary-item" >
+                        <a class="mobile-menu__secondary-link_phone" href="">+38 096 111 11 11</a>
+                    </li>
+                    <li class="mobile-menu__secondary-item">
+                        <a class="mobile-menu__secondary-link_mail" href="">info@devstudio.com</a>
+                    </li>
+                </ul>
+                
+                <ul class="list mobile-menu__third-list">
+                    <li class="mobile-menu__third-item">
+                        <a class="mobile-menu__third-link" href="">Instagram</a>
+                    </li>
+                    <li class="mobile-menu__third-item">
+                        <a class="mobile-menu__third-link" href="">Twitter</a>
+                    </li>
+                    <li class="mobile-menu__third-item">
+                        <a class="mobile-menu__third-link" href="">Facebook</a>
+                    </li>
+                    <li class="mobile-menu__third-item">
+                        <a class="mobile-menu__third-link" href="">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
         
     
     
@@ -60,7 +112,7 @@
     <main>
         
 
-        <section class="hero hero-backgroung-color">
+        <!-- <section class="hero hero-backgroung-color">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
                 <button class="model-btn" type="button" data-modal-open>Заказать услугу</button>
@@ -486,9 +538,8 @@
     </div>
 </div>
 
-
-
-<script src="./css/js/model.js"></script>
+<script src="./css/js/model.js"></script> -->
+<script src="./js/mobile-menu.js"></script>
 
 
 </body>
