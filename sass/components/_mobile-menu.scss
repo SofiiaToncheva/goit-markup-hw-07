@@ -36,6 +36,7 @@
     padding-top: 48px;
     padding-bottom: 48px;
     padding-left: 25px;
+    margin: 0;
 }
 
 
@@ -127,4 +128,10 @@ fill: #212121;
         letter-spacing: 0.02em;
     
         color: #2196F3;
+}
+
+@media screen and (min-width:768px) {
+    .mobile-menu {
+        display: none;
+    }
 }

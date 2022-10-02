@@ -112,9 +112,9 @@
     <main>
         
 
-        <!-- <section class="hero hero-backgroung-color">
+        <section class="hero hero-backgroung-color">
             <div class="container">
-                <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+                <h1 class="hero-title">Эффективные решения для <br> вашего бизнеса</h1>
                 <button class="model-btn" type="button" data-modal-open>Заказать услугу</button>
             </div>
             
@@ -197,7 +197,19 @@
                 <h2 class="section-main-title">Наша команда</h2>
                 <ul class="list team-list">
                     <li class="team-list-shadow">
-                        <img class="team-img" src="./images/team/igor-demyanenko.jpg" alt="фото игорь демьяненко" width="270" height="260">
+                        <picture>
+                            <source srcset="./images/team/desktop/igor-demyanenko-desktop-img.jpg 1x, ./images/team/desktop/igor-demyanenko-desktop-img@2x.jpg 2x " 
+                            media="(min-width:1200px)" />
+                            <source
+                                srcset="./images/team/tablet/igor-demyanenko-tablet-img.jpg 1x, ./images/team/tablet/igor-demyanenko-tablet-img@2x.jpg 2x "
+                                media="(min-width:768px)" />
+                            <source
+                                srcset="./images/team/mobile/igor-demyanenko-mobile-img.jpg 1x, ./images/team/mobile/igor-demyanenko-mobile-img@2x.jpg 2x "
+                                media="(max-width:767px)" />
+                            
+                            <img class="team-img" src="./images/team/mobile/igor-demyanenko-mobile-img.jpg" alt="фото игорь демьяненко" >
+                        </picture>
+                        
                         <div class="team-description">
                             <h3 class="team-title">Игорь Демьяненко</h3>
                             <p class="job-title" lang="en">Product Designer</p>
@@ -234,7 +246,21 @@
                         </div>
                     </li>
                     <li class="team-list-shadow">
-                        <img class="team-img" src="./images/team/olga-repina.jpg" alt="фото ольга репина" width="270" height="260">
+                        <picture>
+                            <source
+                                srcset="./images/team/desktop/olga-repina-desktop-img.jpg 1x, ./images/team/desktop/olga-repina-desktop-img@2x.jpg 2x "
+                                media="(min-width:1200px)" />
+                            <source
+                                srcset="./images/team/tablet/olga-repina-tablet-img.jpg 1x, ./images/team/tablet/olga-repina-tablet-img@2x.jpg 2x "
+                                media="(min-width:768px)" />
+                            <source
+                                srcset="./images/team/mobile/olga-repina-mobile-img.jpg 1x, ./images/team/mobile/olga-repina-mobile-img@2x.jpg 2x "
+                                media="(max-width:767px)" />
+
+                                <img class="team-img" src="./images/team/mobile/olga-repina-mobile-img.jpg" alt="фото ольга репина" >
+                        </picture>
+
+                        
                         <div class="team-description">
                             <h3 class="team-title">Ольга Репина</h3>
                             <p class="job-title" lang="en">Frontend Developer</p>
@@ -271,7 +297,21 @@
                         </div>
                     </li>
                     <li class="team-list-shadow">
-                        <img class="team-img" src="./images/team/nikolay-tarasov.jpg" alt="фото николаи тарасов" width="270" height="260">
+                        <picture>
+                            <source
+                                srcset="./images/team/desktop/nikolay-tarasov-desktop-img.jpg 1x, ./images/team/desktop/nikolay-tarasov-desktop-img@2x.jpg 2x "
+                                media="(min-width:1200px)" />
+                            <source
+                                srcset="./images/team/tablet/nikolay-tarasov-tablet-img.jpg 1x, ./images/team/tablet/nikolay-tarasov-tablet-img@2x.jpg 2x "
+                                media="(min-width:768px)" />
+                            <source
+                                srcset="./images/team/mobile/nikolay-tarasov-mobile-img.jpg 1x, ./images/team/mobile/nikolay-tarasov-mobile-img@2x.jpg 2x "
+                                media="(max-width:767px)" />
+                        
+                            <img class="team-img" src="./images/team/mobile/nikolay-tarasov-mobile-img.jpg" alt="фото николаи тарасов">
+                        </picture>
+
+    
                         <div class="team-description">
                             <h3 class="team-title">Николай Тарасов</h3>
                             <p class="job-title" lang="en">Marketing</p>
@@ -308,7 +348,21 @@
                         </div>
                     </li>
                     <li class="team-list-shadow">
-                        <img class="team-img" src="./images/team/mikhail-ermakov.jpg" alt="фото михаил ермаков" width="270" height="260">
+                        <picture>
+                            <source
+                                srcset="./images/team/desktop/mikhail-ermakov-desktop-img.jpg 1x, ./images/team/desktop/mikhail-ermakov-desktop-img@2x.jpg 2x "
+                                media="(min-width:1200px)" />
+                            <source
+                                srcset="./images/team/tablet/mikhail-ermakov-tablet-img.jpg 1x, ./images/team/tablet/mikhail-ermakov-tablet-img@2x.jpg 2x "
+                                media="(min-width:768px)" />
+                            <source
+                                srcset="./images/team/mobile/mikhail-ermakov-mobile-img.jpg 1x, ./images/team/mobile/mikhail-ermakov-mobile-img@2x.jpg 2x "
+                                media="(max-width:767px)" />
+                        
+                            <img class="team-img" src="./images/team/mobile/mikhail-ermakov-mobile-img.jpg" alt="фото михаил ермаков">
+                        </picture>
+
+
                         <div class="team-description">
                             <h3 class="team-title">Михаил Ермаков</h3>
                             <p class="job-title" lang="en">UI Designer</p>
@@ -404,64 +458,69 @@
     </main>
 
     <footer class="page-footer">
+        
+
+
         <div class="container container-footer">
-            <div class="container-footer-list">
-                <a class="link logo logo-footer" href="index.html">Web<span class="logo-accent-footer">Studio</span></a>
-    
-                <address>
-                    <ul class="list">
-    
-                        <li class="list__item">
-                            <a class="link list__link_color" href="https://goo.gl/maps/79wJ6iFCeuB7EtHP7" target="_blank">г.
+             <div class="container-footer-item">
+                  <div class="container-footer-list">
+                      <a class="link logo logo-footer" href="index.html">Web<span class="logo-accent-footer">Studio</span></a>
+                      <address>
+                          <ul class="list list-address">
+                              <li class="list__item list__item_address">
+                                  <a class="link list__link_color" href="https://goo.gl/maps/79wJ6iFCeuB7EtHP7" target="_blank">г.
                                 Киев,
                                 пр-т Леси
                                 Украинки, 26</a>
+                            </li>
+                            <li class="list__item">
+                                <a class="link list__link" href="mailto:info@example.com">info@example.com</a>
+                            </li>
+                            <li class="list__item">
+                                <a class="link list__link" href="tel:+380991111111">+38 099 111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="container-footer-icons">
+                    <h3 class="page-footer__title">присоединяйтесь</h3>
+                    <ul class="footer-social-list list">
+                        <li>
+                            <a href="" class="footer-social-list__link">
+                                <svg class="footer-social-list__icon" width="20" heith="20">
+                                    <use href="./images/sprite.svg#icon-instagram-2"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="list__item">
-                            <a class="link list__link" href="mailto:info@example.com">info@example.com</a>
+                        <li>
+                            <a href="" class="footer-social-list__link">
+                                <svg class="footer-social-list__icon" width="20" heith="20">
+                                    <use href="./images/sprite.svg#icon-twitter-1"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="list__item">
-                            <a class="link list__link" href="tel:+380991111111">+38 099 111 11 11</a>
+                        <li>
+                            <a href="" class="footer-social-list__link">
+                                <svg class="footer-social-list__icon" width="20" heith="20">
+                                    <use href="./images/sprite.svg#icon-facebook-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="footer-social-list__link">
+                                <svg class="footer-social-list__icon" width="20" heith="20">
+                                    <use href="./images/sprite.svg#icon-linkedin-1"></use>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
-                </address>
+                </div>
             </div>
-    
-            <div class="container-footer-icons">
-                <h3 class="page-footer__title">присоединяйтесь</h3>
-                <ul class="footer-social-list list">
-                    <li>
-                        <a href="" class="footer-social-list__link">
-                            <svg class="footer-social-list__icon" width="20" heith="20">
-                                <use href="./images/sprite.svg#icon-instagram-2"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="footer-social-list__link">
-                            <svg class="footer-social-list__icon" width="20" heith="20">
-                                <use href="./images/sprite.svg#icon-twitter-1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="footer-social-list__link">
-                            <svg class="footer-social-list__icon" width="20" heith="20">
-                                <use href="./images/sprite.svg#icon-facebook-1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="footer-social-list__link">
-                            <svg class="footer-social-list__icon" width="20" heith="20">
-                                <use href="./images/sprite.svg#icon-linkedin-1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <p class="modal-form-text-footer">Підпишіться на розсилку</p>
+
+
+           
+            <div class="footer-tablet">
+                <p class="modal-form-text-footer page-footer__title">Підпишіться на розсилку</p>
                 <form class="modal-form-footer">
     
                     <label class="modal-form-field-footer">
@@ -487,7 +546,7 @@
     </footer>
 
 
-<div class="backdrop is-hidden" data-modal>
+<!-- <div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
             <svg class="modal-close-btn-icon" width="11" height="11">
