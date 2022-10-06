@@ -598,6 +598,9 @@ img {
   .modal-form-input-footer {
     width: 100%;
   }
+  .modal-footer-title {
+    text-align: center;
+  }
 }
 @media screen and (min-width: 768px) {
   .container-footer-item {
@@ -609,9 +612,6 @@ img {
   }
   .modal-form-footer {
     margin: 0;
-  }
-  .page-footer__title {
-    margin-top: 0;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -646,10 +646,37 @@ img {
   .container-footer-list {
     text-align: center;
   }
+  .modal-form-footer {
+    align-items: center;
+  }
+  .page-footer__title {
+    text-align: center;
+  }
+  .modal-form-text-footer {
+    text-align: center;
+  }
 }
 @media screen and (min-width: 1200px) {
   .container-footer-item {
     display: flex;
+    gap: 94px;
+  }
+  .logo-footer {
+    margin-bottom: 20px;
+  }
+  .logo-accent-footer {
+    margin-bottom: 20px;
+  }
+  .modal-form-text-footer {
+    margin-bottom: 20px;
+  }
+  .page-footer__title {
+    text-align: start;
+  }
+  .container-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
   }
   .modal-form-input-footer {
     width: 358px;
@@ -720,7 +747,6 @@ img {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
-  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -1235,7 +1261,7 @@ img {
     flex-wrap: wrap;
     gap: 20px;
   }
-  .portfolio-secondary-list .portfolio-list__item {
+  .portfolio-list__item {
     width: 368px;
     gap: 30px;
   }
